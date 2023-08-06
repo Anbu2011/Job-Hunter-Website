@@ -2,36 +2,15 @@
 <html>
   <head>
     <title>JOVI CAREERS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <style>
-      h1 {
-        font-size : 40px;
-        font-family : Roboto;
-        font-weight : normal;
-        color : rgb(50,50,50);
-        text-align : center;
-      }
       #banner {
-        width : 100%;
         height : 360px;
         object-fit : cover;
-      }
-      
-      h2 {
-        font-size : 32px;
-        font-family : Roboto;
-        font-weight : normal;
-        color : rgb(100,100,100);
-        text-align : center;
-      }
-
-      .bodytext {
-        font-family : Roboto;
-        color : rgb(80,80,80)
-      }
-
-      #container{
-        max-width : 720px;
-        margin : 0 auto 0 auto;
+        width : 100%;
       }
     </style>
   </head>
@@ -40,22 +19,24 @@
 
   
   <body>
-    <div id="container">
-      <h1>Jovi Careers</h1>
-      <img id="banner" src="https://jovi-careerswebsite--anbuseenuvasan2.repl.co/static/banner.jpg">
-      <h2>About us</h2>
-      <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. A lacus vestibulum sed arcu non odio euismod lacinia at. Elit eget gravida cum sociis natoque penatibus. Aliquam malesuada bibendum arcu vitae elementum. Porttitor eget dolor morbi non arcu risus. Ultricies integer quis auctor elit sed vulputate.</p>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Jovi Careers</h1>
+      <img class="img-fluid" id="banner" src="https://jovi-careerswebsite--anbuseenuvasan2.repl.co/static/banner.jpg">
+      <h2 class="text-center mt-2 mb-4">About us</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. A lacus vestibulum sed arcu non odio euismod lacinia at. Elit eget gravida cum sociis natoque penatibus. Aliquam malesuada bibendum arcu vitae elementum. Porttitor eget dolor morbi non arcu risus. Ultricies integer quis auctor elit sed vulputate.</p>
       
-      <h2>Open Positions</h2>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       
-      <p class= "bodytext">TODO - show the jobs here</p>
-      
-      <div style = "text-align : center;">
-        <button>Contact Us</button>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
       </div>
-
-      <p>Copyright 2023 - Jovi</p>
       
-  </div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-4">Copyright 2023 - Jovi</p>
+      </div>
+    </div>
   </body>
 </html>

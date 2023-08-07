@@ -1,2 +1,2 @@
-# jovi-careers_website
+# Job seeker Website
 A careers website

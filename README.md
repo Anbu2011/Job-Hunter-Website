@@ -1,2 +1,2 @@
-# Job seeker Website
+# Job Hunter Website
 A careers website

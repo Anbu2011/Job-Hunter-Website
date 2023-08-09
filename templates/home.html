@@ -8,22 +8,31 @@
 
     <style>
       #banner {
-        height : 550px;
+        height : 530px;
         object-fit : cover;
         width : 100%;
+        margin-bottom : 16px;
       }
     </style>
   </head>
 
   <body>
     {% include 'navbar.html' %}
+    <img class="img-fluid" id="banner" src="https://careers-for-job-hunters--anbuseenuvasan2.repl.co/static/job_hunting_2.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
         {{company_name}}
       </h1>
-      <img class="img-fluid" id="banner" src="https://careers-for-job-hunters--anbuseenuvasan2.repl.co/static/job_hunting.webp">
-      <h2 class="text-center mt-2 mb-4">About us</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. A lacus vestibulum sed arcu non odio euismod lacinia at. Elit eget gravida cum sociis natoque penatibus. Aliquam malesuada bibendum arcu vitae elementum. Porttitor eget dolor morbi non arcu risus. Ultricies integer quis auctor elit sed vulputate.</p>
+      
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-md-6">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. A lacus vestibulum sed arcu non odio euismod lacinia at. Elit eget gravida cum sociis natoque penatibus. Aliquam malesuada bibendum arcu vitae elementum. Porttitor eget dolor morbi non arcu risus. Ultricies integer quis auctor elit sed vulputate.
+          </p>
+        </div>
+        <div class="d-none d-md-block col-6">
+          <img src="/static/peopleworking.jpg" style="height:320px;border-radius:10px;">
+        </div>
+      </div>
       
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       
